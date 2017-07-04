@@ -1,16 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
+import Hand from "./Hand";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <h1> 🦄 </h1>
-          <h1>react-starter-kit</h1>
-        </div>
-      </div>
-    );
-  }
-}
+const App = () =>
+  <div className="Main">
+    <Hand />
+  </div>;
 
 export default App;

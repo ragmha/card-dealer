@@ -14,14 +14,13 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .Hand {
   position: relative;
   min-height: 250px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: "#fefefe";
+  background: #fefefe;
   padding: 2rem;
   border-radius: 0.5rem;
 }
@@ -33,7 +32,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.Bottom {
+.Button {
   background: rgba(255, 255, 255, 0.8);
   padding: 1em 2em;
   font-size: 1.125rem;
@@ -73,12 +72,12 @@ body {
   }
 }
 
-.PlaceholderCard .Card {
+.PlaceholderCard,
+.Card {
   margin: 0.25rem;
   width: 120px;
   height: 160px;
 }
-
 .PlaceholderCard {
   background: #eee;
   border-radius: 0.5rem;
