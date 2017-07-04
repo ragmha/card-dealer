@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background-size: 200vw 200vh;
+  background-color: darkgreen;
+  background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-blend-mode: multiply;
+  background-position: -45vw -20vh;
+}
+
+.Main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hand {
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: "#fefefe";
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.Hand_Cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.Bottom {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1em 2em;
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.Loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  animation: fade-in 0.5s ease-out both;
+}
+
+.Loading > img {
+  width: 3rem;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(20%);
+  }
+}
+
+.PlaceholderCard .Card {
+  margin: 0.25rem;
+  width: 120px;
+  height: 160px;
+}
+
+.PlaceholderCard {
+  background: #eee;
+  border-radius: 0.5rem;
+}
+
+.Card {
+  animation: slide-up 0.3s backwards;
+  transition: opacity 0.5s;
+  background: url(./card-sprite.png);
+  background-size: 5200% 100%;
+}
+
+.Card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.Card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.Card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.Card:nth-child(5) {
+  animation-delay: 0.4s;
+}
